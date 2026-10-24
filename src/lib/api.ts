@@ -1,7 +1,7 @@
 import type { Category, Defect, Status, Urgency, Weights } from "./types";
 import type { DB, NewReport } from "./store";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "/api";
 
 export async function fetchFullDB(): Promise<DB | null> {
   try {
