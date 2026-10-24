@@ -45,7 +45,15 @@ export function PublicShell({ children }: { children: ReactNode }) {
         <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 text-sm text-muted-foreground sm:grid-cols-3">
           <div><Logo className="text-foreground" /><p className="mt-2">See the damage. Prioritise the repair. A college hackathon prototype.</p></div>
           <div><div className="font-semibold text-foreground">Methodology</div><p className="mt-2">Rule-based anomaly detection and a transparent 0–100 priority score. Weights are prototype assumptions, not municipal standards.</p></div>
-          <div><div className="font-semibold text-foreground">Data notice</div><p className="mt-2">Sensor data is simulated. Seeded Jaipur locations are demonstration records, not verified defects. Data is backed by a local SQLite database.</p> <Link to="/about" className="mt-2 inline-block underline">Read more</Link></div>
+          <div>
+            <div className="font-semibold text-foreground">Data & Legal Notice</div>
+            <p className="mt-2">Sensor data is simulated. Seeded Jaipur locations are demonstration records, not verified defects.</p>
+            <div className="mt-2 flex flex-wrap gap-3">
+              <Link to="/about" className="underline hover:text-foreground">Methodology</Link>
+              <Link to="/terms" className="underline hover:text-foreground">Terms</Link>
+              <Link to="/privacy" className="underline hover:text-foreground">Privacy</Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
